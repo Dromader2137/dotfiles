@@ -1,9 +1,6 @@
 from libqtile import bar, layout
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-from libqtile.widget import base
-import math
-import psutil
 from qtile_extras import widget
 from qtile_extras.widget.decorations import PowerLineDecoration
 
@@ -26,8 +23,9 @@ keys = [
     Key([mod, "shift"], "w", lazy.spawn("firefox"), desc="Launch web browser (Firefox)"),
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui"), desc="Launch Flameshot"),
     Key([mod, "shift"], "d", lazy.spawn("discord"), desc="Launch Discord"),
-    Key([mod, "shift"], "g", lazy.spawn("steam"), desc="Launch Steam"),
+    Key([mod, "shift"], "g", lazy.spawn("lutris"), desc="Launch Lutris"),
     Key([mod, "shift"], "b", lazy.spawn("blender"), desc="Launch Blender"),
+    Key([mod, "shift"], "i", lazy.spawn("gimp"), desc="Launch Gimp"),
 
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),

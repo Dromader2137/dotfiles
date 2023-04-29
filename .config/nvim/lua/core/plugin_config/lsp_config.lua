@@ -24,6 +24,7 @@ require('lspconfig').clangd.setup {
   telemetry = {
     enable = false,
   },
+
 }
 
 require('lspconfig').pyright.setup {
