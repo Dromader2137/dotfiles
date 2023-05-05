@@ -5,6 +5,7 @@
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export FILEMANAGER=pcmanfm
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

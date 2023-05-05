@@ -12,10 +12,11 @@ terminal = "kitty"
 ###------------------------------------------###
 
 keys = [
-    Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
+    Key([mod], "j", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
-    Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
+    Key([mod], "k", lazy.layout.down(), desc="Move focus down"),
+    Key([mod], "i", lazy.layout.up(), desc="Move focus up"),
+    Key([mod], "space", lazy.layout.flip(), desc="Flip"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
@@ -33,42 +34,6 @@ keys = [
     Key([mod, "control", "shift"], "q", lazy.spawn("shutdown now"), desc="Shutdown PC"),
     Key([mod, "control", "shift"], "r", lazy.spawn("reboot"), desc="Reboot PC"),
 ]
-
-###------------------------------------------###
-
-'''
-foreground            #eff0eb
-background            #282a36
-selection_foreground  #000000
-selection_background  #FFFACD
-url_color             #0087BD
-cursor                #97979B
-cursor_text_color     #282A36
-# black
-color0   #282a36
-color8   #686868
-# red
-color1   #FF5C57
-color9   #FF5C57
-# green
-color2   #5AF78E
-color10  #5AF78E
-# yellow
-color3   #F3F99D
-color11  #F3F99D
-# blue
-color4  #57C7FF
-color12 #57C7FF
-# magenta
-color5   #FF6AC1
-color13  #FF6AC1
-# cyan
-color6   #9AEDFE
-color14  #9AEDFE:
-# white
-color7   #F1F1F0
-color15  #EFF0EB
-'''
 
 ###------------------------------------------###
 
@@ -94,7 +59,7 @@ layouts = [
 widget_defaults = dict(
     font="mononoki bold",
     fontsize=12,
-    padding=1,
+    padding=3,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -132,8 +97,9 @@ screens = [
             24,
             margin = [10, 10, 0, 10],
             background = "#282a36",
+            opacity = 0.9,
         ),
-        wallpaper='~/.config/qtile/Wallpaper.jpg',
+        wallpaper='~/.config/qtile/Wallpaper.png',
         wallpaper_mode='fill',
     ),
     Screen(
@@ -154,8 +120,9 @@ screens = [
             24,
             margin = [10, 10, 0, 10],
             background = "#282a36",
+            opacity = 0.9,
         ),
-        wallpaper='~/.config/qtile/Wallpaper.jpg',
+        wallpaper='~/.config/qtile/Wallpaper.png',
         wallpaper_mode='fill',
     ),
 ]
