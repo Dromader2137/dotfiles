@@ -1,0 +1,91 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passtrough": false,
+  "gtk-layer-shell": true,
+  "height": 0,
+  "modules-left": 
+  [
+    "clock",
+    "wlr/workspaces",
+  ],
+  "modules-right": 
+  [
+		"battery",
+		"network",
+    "network#2",
+    "pulseaudio",
+    "pulseaudio#microphone"
+  ],
+  "wlr/workspaces":
+  {
+    "format": "XX",
+    "persistent_workspaces": {
+      "1": [],
+    }
+  },
+	"battery": {
+		"format": "{icon}  {capacity}%",
+		"format-icons": ["", "", "", "", ""],
+    "format-time": "{H}h{M}m",
+    "format-charging": " {icon}  {capacity}%",
+    "format-full": " {icon}  Full",
+    "interval": 30,
+    "states": {
+      "warning": 25,
+      "critical": 10
+    },
+    "tooltip": false
+	},
+	"network": {
+    "interface" : "wlp2s0",
+		"format": "  {essid}",
+		"format-disconnected": "  Disconnected",
+    "tooltip": false
+	},
+  "network#2": {
+    "interface" : "enp4s0",
+		"format": " Connected",
+		"format-disconnected": " Disconnected",
+    "tooltip": false
+	},
+
+  "clock":
+  {
+    "format": "{:󱑎 %R   %d/%m} ",
+  },
+  "pulseaudio": 
+  {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": "󰝟 Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5",
+    "scroll-step": 5,
+    "format-icons": 
+    {
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  },
+  "pulseaudio#microphone": 
+  {
+    "format": "{format_source}",
+    "tooltip": false,
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 Muted",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  }
+}
+

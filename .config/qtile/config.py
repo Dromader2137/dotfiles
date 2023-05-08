@@ -27,6 +27,7 @@ keys = [
     Key([mod, "shift"], "g", lazy.spawn("lutris"), desc="Launch Lutris"),
     Key([mod, "shift"], "b", lazy.spawn("blender"), desc="Launch Blender"),
     Key([mod, "shift"], "i", lazy.spawn("gimp"), desc="Launch Gimp"),
+    Key([mod, "shift"], "o", lazy.spawn("obs"), desc="Launch OBS"),
 
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
@@ -51,7 +52,7 @@ for i in groups:
 ###------------------------------------------###
 
 layouts = [
-    layout.MonadTall(border_width=2, border_focus="#686868", border_normal="#282a36", margin=10, ratio=0.55),
+    layout.MonadTall(border_width=0, border_focus="#686868", border_normal="#282a36", margin=10, ratio=0.55),
 ]
 
 ###------------------------------------------###
@@ -97,7 +98,7 @@ screens = [
             24,
             margin = [10, 10, 0, 10],
             background = "#282a36",
-            opacity = 0.9,
+            #opacity = 0.85,
         ),
         wallpaper='~/.config/qtile/Wallpaper.png',
         wallpaper_mode='fill',
@@ -120,7 +121,7 @@ screens = [
             24,
             margin = [10, 10, 0, 10],
             background = "#282a36",
-            opacity = 0.9,
+            #opacity = 0.85,
         ),
         wallpaper='~/.config/qtile/Wallpaper.png',
         wallpaper_mode='fill',

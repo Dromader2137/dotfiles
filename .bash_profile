@@ -4,5 +4,5 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-startx
-setxkbmap pl
+Hyprland
+swaybg -i .config/hypr/Wallpaper.png
