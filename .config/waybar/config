@@ -11,6 +11,10 @@
     "clock",
     "wlr/workspaces",
   ],
+  "modules-center":
+  [
+    "hyprland/window"
+  ],
   "modules-right": 
   [
 		"battery",
@@ -21,17 +25,14 @@
   ],
   "wlr/workspaces":
   {
-    "format": "XX",
-    "persistent_workspaces": {
-      "1": [],
-    }
+    "format": "",
   },
 	"battery": {
 		"format": "{icon}  {capacity}%",
 		"format-icons": ["", "", "", "", ""],
     "format-time": "{H}h{M}m",
     "format-charging": " {icon}  {capacity}%",
-    "format-full": " {icon}  Full",
+    "format-full": " {icon} Full",
     "interval": 30,
     "states": {
       "warning": 25,
