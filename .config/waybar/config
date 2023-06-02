@@ -32,7 +32,7 @@
 		"format-icons": ["", "", "", "", ""],
     "format-time": "{H}h{M}m",
     "format-charging": " {icon}  {capacity}%",
-    "format-full": " {icon} Full",
+    "format-full": " {icon}  Full",
     "interval": 30,
     "states": {
       "warning": 25,
