@@ -27,6 +27,11 @@ return require('packer').startup(function(use)
   }
   use "nvim-treesitter/nvim-treesitter"
   use "catppuccin/nvim"
+  use "folke/trouble.nvim"
+  use {
+    'declancm/cinnamon.nvim',
+    config = function() require('cinnamon').setup() end
+  }
 
   if packer_bootstrap then
     require('packer').sync()
