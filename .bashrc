@@ -13,5 +13,7 @@ alias grep='grep --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias show-wifi='nmcli dev wifi'
 alias connect-wifi='nmcli dev wifi connect --ask'
+alias gitlog='git log --graph --pretty=oneline --abbrev-commit --oneline'
+alias vi="nvim"
 
 PS1='\[\033[34m\]\[\033[30m\]\[\033[44m\] \w \[\033[40m\]\[\033[34m\]\n 󰘍 \[\033[37m\]'
