@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-scale '/home/dr/Wallpapers/2.jpg' '/home/dr/Wallpapers/4.jpg' '/home/dr/Wallpapers/15.jpg' '/home/dr/Wallpapers/8.jpg' '/home/dr/Wallpapers/20.jpg' '/home/dr/Wallpapers/13.jpg' '/home/dr/Wallpapers/11.jpg' '/home/dr/Wallpapers/6.jpg' '/home/dr/Wallpapers/12.jpg' '/home/dr/Wallpapers/1.jpg' '/home/dr/Wallpapers/3.jpg' '/home/dr/Wallpapers/10.jpg' '/home/dr/Wallpapers/7.jpg' 
