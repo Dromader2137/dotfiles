@@ -1,6 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
 vim.wo.nu = true
 vim.wo.relativenumber = true
 vim.opt.backspace = '2'

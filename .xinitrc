@@ -48,8 +48,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xrandr --output DP-1-0 --right-of eDP-1 --auto
+xrandr --output DP-1-2 --right-of eDP-1 --auto
+xrandr --output DP-1-4 --right-of eDP-1 --auto
 setxkbmap pl
-picom --experimental-backend &
+picom &
 ~/.fehbg &
 bspwm

@@ -1,17 +1,24 @@
 # terminal emulator
 super + Return
-	alacritty
+	~/.local/bin/spawn-term
 
-# browser
-super + w
-  floorp
+super + shift + Return
+  emacsclient -c
 
 super + z
   rofi -show drun
 
+super + r
+  rofi -show run
+
+super + w
+  rofi -show window
+
 super + shift + s
   flameshot gui
 
+super + shift + l
+  slock
 # bg
 super + b
   feh --randomize --bg-scale ~/Wallpapers/* 
@@ -20,6 +27,9 @@ super + b
 super + Escape
 	pkill -USR1 -x sxhkd
 
+
+super + {F8, F9}
+  brightnessctl set {5%-, +5%}
 #
 # bspwm hotkeys
 #
@@ -91,7 +101,7 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} '^{1-9,10}'; ./~/.fehbg
 
 #
 # preselect

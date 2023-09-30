@@ -1,0 +1,11 @@
+#!/bin/bash
+
+monitor=$(~/.local/bin/get-focused-monitor);
+
+echo "$monitor"
+
+if [[ "$monitor" == "eDP-1" ]]; then
+  alacritty
+else
+  alacritty -o font.size=16
+fi
