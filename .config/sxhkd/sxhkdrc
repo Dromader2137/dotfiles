@@ -1,6 +1,6 @@
 # terminal emulator
 super + Return
-	~/.local/bin/spawn-term
+  ~/.local/bin/spawn-term
 
 super + shift + Return
   emacsclient -c
